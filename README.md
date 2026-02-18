@@ -50,6 +50,14 @@ command -v cc-logger
 export PATH="${XDG_BIN_HOME:-$HOME/.local/bin}:$PATH"
 ```
 
+- **SSL certificate error on macOS**: If you see `[SSL: CERTIFICATE_VERIFY_FAILED]` during install, run the certificate installer for your Python version:
+
+```bash
+"/Applications/Python 3.XX/Install Certificates.command"
+```
+
+Replace `3.XX` with your version (run `python3 --version` to check). Then re-run `cc-logger install`.
+
 - To manually configure hooks, get the hook path:
 
 ```bash
