@@ -212,3 +212,4 @@ __marimo__/
 src/cc_logger/verification.py
 .vercel
 .DS_Store
+.env*.local
